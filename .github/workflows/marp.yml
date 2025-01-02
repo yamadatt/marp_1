@@ -1,0 +1,43 @@
+name: Generate Marp PDF and PowerPoint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install Marp CLI
+      run: npm install -g @marp-team/marp-cli
+
+    - name: Convert Markdown to PDF
+      run: marp --pdf test.md
+
+    - name: Convert Markdown to PowerPoint
+      run: marp --pptx test.md
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v2
+      with:
+        name: marp-pdf
+        path: test.pdf
+
+    - name: Upload PowerPoint
+      uses: actions/upload-artifact@v2
+      with:
+        name: marp-pptx
+        path: test.pptx
