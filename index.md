@@ -19,7 +19,7 @@ style: |
 
 ---
 <!-- _class: title -->
-# SSGのHugoで快適なblog生活を送る
+# 更新したぜ！SSGのHugoで快適なblog生活を送る
 ## 時代はStaticなサイトを求めている
 
 

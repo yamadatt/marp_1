@@ -26,7 +26,6 @@ jobs:
       with:
         name: my-artifact
         path: ./
-
 #
     - name: Deploy to Netlify
       uses: nwtgck/actions-netlify@v3
