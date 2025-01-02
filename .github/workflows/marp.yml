@@ -16,28 +16,10 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '14'
-
-    - name: Install Marp CLI
-      run: npm install -g @marp-team/marp-cli
-
-    - name: Convert Markdown to PDF
-      run: marp --pdf test.md
-
-    - name: Convert Markdown to PowerPoint
-      run: marp --pptx test.md
+    - name: Convert Markdown into HTML and PDF
+      uses: KoharaKazuya/marp-cli-action@v4
 
     - name: Upload PDF
       uses: actions/upload-artifact@v4
-      with:
-        name: marp-pdf
-        path: test.pdf
 
-    - name: Upload PowerPoint
-      uses: actions/upload-artifact@v4
-      with:
-        name: marp-pptx
-        path: test.pptx
+
