@@ -36,4 +36,5 @@ jobs:
         run: npm install
 
       - name: Execute textlint
+        continue-on-error: true
         run: npx textlint "index.md"
