@@ -1,9 +1,13 @@
 name: reviewdog
+
 on:
-  push:
-    branches:
-      - master
-  pull_request:
+    push:
+      branches:
+        - main
+    pull_request:
+      branches:
+        - main
+
 permissions:
   pull-requests: write
 
