@@ -13,8 +13,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+    - name: Timeline
+      uses: Kesin11/actions-timeline@v2.0.3
+
     - name: Check out repository
       uses: actions/checkout@v4
+
+    - name: Link Checker
+      id: lychee
+      uses: lycheeverse/lychee-action@v2
+      with:
+        fail: false
+
+    - name: Create Issue From File
+      # Only create an issue if there are broken links
+      if: steps.lychee.outputs.exit_code != 0 
+      uses: peter-evans/create-issue-from-file@v5
+      with:
+        title: Link Checker Report
+        content-filepath: ./lychee/out.md
+        labels: report, automated issue
 
     - name: Convert Markdown into HTML and PDF
       uses: KoharaKazuya/marp-cli-action@v4
