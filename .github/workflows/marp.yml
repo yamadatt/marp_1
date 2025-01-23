@@ -16,8 +16,8 @@ jobs:
 
     steps:
 
-    - name: Timeline
-      uses: Kesin11/actions-timeline@v2.2.1
+    # - name: Timeline
+    #   uses: Kesin11/actions-timeline@v2.2.1
 
     - name: Check out repository
       uses: actions/checkout@v4
