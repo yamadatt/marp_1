@@ -23,20 +23,17 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - name: Install packages via packages.json
+      - name: Install textlint
+        run: >
+          npm install --save-dev
+          textlint
+          textlint-rule-preset-smarthr
+          textlint-rule-prh
+          textlint-filter-rule-allowlist
+          textlint-rule-preset-ja-technical-writing
+      
+      - name: Install dependent module
         run: npm install
-      - name: Run textlint (avoiding error)
-        run: npx textlint *.md -o ./.textlint.log | true
-        shell: bash {0}
-      - name: Report if textlint finds problems
-        run: |
-          if [ -e ./.textlint.log ]; then
-            # create body file
-            pwd_esc=$(pwd | sed 's/\//\\\//g')
-            cat ./.textlint.log | sed "s/${pwd_esc}/### :policeman: ./g" >> ./.body.txt
-            # pr comment
-            # gh pr comment --body-file ./.body.txt "${URL}"
-          fi        
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          URL: ${{ github.event.pull_request.html_url }}
+
+      - name: Execute textlint
+        run: npx textlint "*.md"
