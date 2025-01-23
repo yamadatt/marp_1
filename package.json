@@ -1,33 +1,24 @@
 {
-  "name": "action-textlint",
+  "name": "markdown-project-with-textlint",
   "version": "1.0.0",
-  "description": "textlint with reviewdog",
+  "description": "# markdown-project-with-textlint",
   "main": "index.js",
-  "directories": {
-    "doc": "doc"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tsuyoshicho/action-textlint.git"
+    "url": "git+https://github.com/MasahiroKawahara/markdown-project-with-textlint.git"
   },
-  "keywords": [
-    "textlint",
-    "markdown"
-  ],
-  "author": "tsuyoshi_cho <Tsuyoshi.CHO+npm@Gmail.com>",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tsuyoshicho/action-textlint/issues"
+    "url": "https://github.com/MasahiroKawahara/markdown-project-with-textlint/issues"
   },
-  "homepage": "https://github.com/tsuyoshicho/action-textlint#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "textlint": "14.4.2",
-    "textlint-rule-preset-ja-technical-writing": "12.0.2",
-    "textlint-rule-prh": "6.0.0",
-    "textlint-rule-spellcheck-tech-word": "5.0.0"
+  "homepage": "https://github.com/MasahiroKawahara/markdown-project-with-textlint#readme",
+  "devDependencies": {
+    "textlint": "^12.1.1",
+    "textlint-filter-rule-allowlist": "^4.0.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0"
   }
 }
