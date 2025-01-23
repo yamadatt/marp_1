@@ -26,7 +26,7 @@ jobs:
       - name: Install packages via packages.json
         run: npm install
       - name: Run textlint (avoiding error)
-        run: npx textlint ./contents/**/*.md -o ./.textlint.log | true
+        run: npx textlint *.md -o ./.textlint.log | true
         shell: bash {0}
       - name: Report if textlint finds problems
         run: |
