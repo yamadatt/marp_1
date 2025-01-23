@@ -35,6 +35,29 @@ jobs:
         content-filepath: ./lychee/out.md
         labels: report, automated issue
 
+        - name: Setup node with cache
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - name: Install textlint
+        run: >
+          npm install --save-dev
+          textlint
+          textlint-rule-preset-smarthr
+          textlint-rule-prh
+          textlint-filter-rule-allowlist
+          textlint-rule-preset-ja-technical-writing
+      
+      - name: Install dependent module
+        run: npm install
+
+      - name: Execute textlint
+        continue-on-error: true
+        run: npx textlint "index.md"
+
+
+
     - name: Convert Markdown into HTML and PDF
       uses: KoharaKazuya/marp-cli-action@v4
       with:

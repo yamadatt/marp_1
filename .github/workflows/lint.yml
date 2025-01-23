@@ -3,10 +3,10 @@ name: run-textlint
 on:
     push:
       branches:
-        - main
+        - main_
     pull_request:
       branches:
-        - main
+        - main_
 
 jobs:
   run-textlint:
