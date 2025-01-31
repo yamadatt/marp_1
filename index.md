@@ -199,6 +199,8 @@ _color: white
 
 これからも明日の自分に書きます！
 
+（画像はフリー素材を使用）
+
 <!--
 _footer: 'Photo by jet dela cruz on Unsplash'
 -->
