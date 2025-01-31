@@ -27,7 +27,7 @@ style: |
 _color: white
 _footer: 'Photo by Earl Lasala on Unsplash'
 -->
-![bg brightness:0.4](https://images.unsplash.com/photo-1600183309638-bb6dfca7e921?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
+![bg brightness:0.8](https://images.unsplash.com/photo-1542320868-5e9bcce320c3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 
 
@@ -47,9 +47,10 @@ _footer: 'Photo by Earl Lasala on Unsplash'
 # 発表するに至った経緯
 
 1. 加齢とともに、すぐに忘れてしまう。何回もググる
-2. ググると負けた気になる。技術的なメモはブログに残すよう心がけるように
-3. ブログを約2年ぐらい運用
-4. システム開発やっているとブログの仕組みについて話す機会がないので、話してみたいと思った
+2. ググると負けた気になる
+3. 技術的なメモをブログに残して、未来の自分に残すようになる
+4. ブログを約2年ぐらい運用
+5. システム開発やっているとブログの仕組みについて話す機会がないので、話してみたいと思った
 
 ---
 # このLTで得られるもの
@@ -107,7 +108,15 @@ _color: white
   - Netlify
   - Vercel
   - S3,CloudFront
+  
 
+<!--
+_color: white
+-->
+
+
+![bg brightness:0.7](
+https://images.unsplash.com/photo-1738028449238-fa5ae8c33bce?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 ---
 ## SSGのメリット
@@ -151,14 +160,18 @@ Built in 19447 ms
 ## この環境の良いところ
 
 - 無料の範囲でできる
-- 広告が入らないので精神的に良い
 - 好みのエディタで書ける（例：VSC、Sakura）
 - 記事管理はGitHub
   - 複数人で記事を書くことができる
   - プルリク、レビュー、マージなどの運用も可能
   - GitHub Actionsで誤字脱字やデッドリンクのチェック等のCI
-- ホスティング先の変更も容易（ベンダロックイン回避）
 - イケてる感（tech企業のblogに採用されている例もある）
+
+<!--
+_color: white
+-->
+
+![bg  brightness:0.5](https://images.unsplash.com/photo-1542596594-649edbc13630?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 ---
 ## この環境のイマイチなところ
@@ -172,6 +185,12 @@ Built in 19447 ms
   - 無駄感はある
 - Netlifyはたくさん使うと課金対象
   - 例：ビルド300分/1ヶ月を超える
+
+<!--
+_color: white
+-->
+
+![bg l:40% brightness:0.5](https://images.unsplash.com/photo-1607688387751-c1e95ae09a42?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 
 ---
