@@ -33,7 +33,7 @@ _footer: 'Photo by Earl Lasala on Unsplash'
 ---
 # はじめにお断り
 
-「以下の仕組みで資料を作ったら、効率化できるか？」を試行してます。
+「以下の仕組みでプレゼン資料を作ったら、効率化できるか？」を試行してます。
 
 - Marpで書く
 - GitHubActionsによるCI/CD
