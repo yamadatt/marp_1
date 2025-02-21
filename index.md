@@ -76,9 +76,6 @@ _color: white
 - 私のブログを読める（←宣伝）
   - バカも休み休み Yeah（ https://yamada-tech-memo.netlify.app/ ）
 
-# このLTで得られないもの
-
-- 趣味の話なので、直接業務への活用は難しいです。ごめんなさい。
 
 ---
 # アジェンダ
