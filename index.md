@@ -38,6 +38,8 @@ _footer: 'Photo by Earl Lasala on Unsplash'
 - Marpで書く
 - GitHubActionsによるCI/CD
 
+機密情報は無いです。
+
 <!--
 _color: white
 -->
@@ -173,14 +175,15 @@ Built in 19447 ms
 ---
 ## この環境の良いところ
 
+- イケてる感
+  - techなスタートアップのblogに採用されている例も
+  - ツヨツヨなエンジニア感を出せる
 - 無料の範囲でできる
 - 好みのエディタで書ける（例：VSC、Sakuraエディタ）
 - 記事管理はGitHub
   - 複数人で記事を書くことができる
   - プルリク、レビュー、マージなどの運用も可能
   - GitHub Actionsで誤字脱字やデッドリンクのチェック等をCIで
-- イケてる感
-  - techなスタートアップのblogに採用されている例も
 
 <!--
 _color: white
