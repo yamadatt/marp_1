@@ -38,7 +38,6 @@ _footer: 'Photo by Earl Lasala on Unsplash'
 - Marpで書く
 - GitHubActionsによるCI/CD
 
-機密情報は無いです。
 
 <!--
 _color: white
@@ -76,6 +75,10 @@ _color: white
 - Hugoというツールの存在を知る
 - 私のブログを読める（←宣伝）
   - バカも休み休み Yeah（ https://yamada-tech-memo.netlify.app/ ）
+
+# このLTで得られないもの
+
+- 趣味の話なので、直接業務には活用するのは難しいです
 
 ---
 # アジェンダ
